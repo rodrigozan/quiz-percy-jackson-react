@@ -8,7 +8,9 @@ function Quiz(props) {
     return opcoes.map((opcao, index) => {
       return (
         <div key={index} className="opcoes-grid">
-          <button onClick={() => handleAnswer(opcao)}>{opcao}</button>
+          <button class="rounded" onClick={() => handleAnswer(opcao)}>
+            {opcao}
+          </button>
         </div>
       );
     });
