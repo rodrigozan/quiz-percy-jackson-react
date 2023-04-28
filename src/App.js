@@ -66,7 +66,7 @@ function App() {
   };
 
   return (
-    <div className="app">
+    <div className="app font-sans bg-gray-100 p-6">
       <h1 className="text-4xl font-bold mb-4">Quiz Percy Jackson</h1>
       {!showResult ? (
         <Quiz
@@ -85,9 +85,13 @@ function App() {
       {step > 1 && (
         <div className="feedback">
           {score >= step - 1 ? (
-            <p className="correct">Você acertou a pergunta {step - 1}!</p>
+            <p className="correct text-gray-700">
+              Você acertou a pergunta {step - 1}!
+            </p>
           ) : (
-            <p className="incorrect">Você errou a pergunta {step - 1}.</p>
+            <p className="incorrect text-gray-700">
+              Você errou a pergunta {step - 1}.
+            </p>
           )}
         </div>
       )}
